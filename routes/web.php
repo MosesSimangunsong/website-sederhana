@@ -10,8 +10,8 @@ use App\Http\Controllers\PageController;
 |--------------------------------------------------------------------------
 */
 
-// 2. Rute untuk Homepage ('/') akan memanggil method 'home' di PageController
+// 2. Rute untuk Homepage ('/') akan memanggil method 'home'
 Route::get('/', [PageController::class, 'home']);
 
-// 3. Rute untuk '/about' akan memanggil method 'about' di PageController
+// 3. Rute untuk '/about' akan memanggil method 'about'
 Route::get('/about', [PageController::class, 'about']);

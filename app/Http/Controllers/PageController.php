@@ -9,7 +9,7 @@ class PageController extends Controller
     // Method untuk menampilkan Homepage
     public function home()
     {
-        // 'welcome' adalah nama file view di resources/views/welcome.blade.php
+        // Ini akan memanggil file 'resources/views/welcome.blade.php'
         return view('welcome');
     }
 
@@ -18,12 +18,11 @@ class PageController extends Controller
     {
         // Kita akan mengirim data ke view
         $data = [
-            'nama' => 'Moses Romulus', // Ganti dengan nama Anda
+            'nama' => 'Moses Simangunsong', // Nama Anda
             'pekerjaan' => 'Mahasiswa'
         ];
         
-        // 'about' adalah nama file view di resources/views/about.blade.php
-        // Kita juga mengirimkan variabel $data ke view
+        // Ini akan memanggil file 'resources/views/about.blade.php'
         return view('about', $data);
     }
 }
